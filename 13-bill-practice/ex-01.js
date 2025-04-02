@@ -7,7 +7,7 @@ if(guestNumber>0){
         let personalBill = (bill + bill*tips/100)/guestNumber;
         alert(
             `Общий счёт: ${bill} 
-            \nСервисный сбор: ${tips}
+            \nСервисный сбор: ${tips}%
             \nКоличество гостей: ${guestNumber}
             \nОплата от каждого гостя: ${personalBill.toFixed(2)}`
         );
