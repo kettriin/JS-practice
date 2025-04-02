@@ -4,7 +4,7 @@ if(guestNumber>0){
     const bill = Number(prompt('Введите сумму счёта '));
     if(bill>0){
         const tips = parseInt(prompt('Введите процент чаевых '));
-        let personalBill = (bill + bill*tips)/guestNumber;
+        let personalBill = (bill + bill*tips/100)/guestNumber;
         alert(
             `Общий счёт: ${bill} 
             \nСервисный сбор: ${tips}
