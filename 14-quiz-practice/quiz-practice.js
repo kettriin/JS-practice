@@ -1,29 +1,27 @@
 let points = 0;
 alert(`Начните игру`);
-let answer = parseInt(prompt(
+let answer = prompt(
     `Вопрос 1:
     \nКто стал второй матерью для Крошечки-Хаврошечки?
     \n1 Ласточка
     \n2 Корова
-    \n3 Матушка Река`)
+    \n3 Матушка Река`
 );
 
-if(answer === 2){ 
-    points += answer;
-    answer = 0;
+if(parseInt(answer) === 2 || answer.toLowerCase() === "корова"){ 
+    points += 2;
 }
 
-answer = parseInt(prompt(
+answer = prompt(
     `Вопрос 2:
     \nКто съел охотников в Красной шапочке?
     \n1 Бабушка
     \n2 Волк
-    \n3 Никто не ел`)
+    \n3 Никто`
 );
 
-if(answer === 3){ 
-    points += answer;
-    answer = 0;
+if(parseInt(answer) === 3 || answer.toUpperCase() === "НИКТО"){ 
+    points += 3;
 }
 
 alert(`Вы набрали ${points} баллов из 5 возможных`);
